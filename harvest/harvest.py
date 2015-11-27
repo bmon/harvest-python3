@@ -11,7 +11,7 @@ class HarvestError(Exception):
     pass
 
 
-class Harvest:
+class HarvestUser:
     def __init__(
             self, uri, email=None, password=None, client_id=None,
             token=None, put_auth_in_header=True):

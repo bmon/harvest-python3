@@ -7,7 +7,7 @@ Usage
 -----
 
     import harvest
-    user = harvest.Harvest('https://example.harvestapp.com', 'example@email.com', 'passw0rd')
+    user = harvest.HarvestUser('https://example.harvestapp.com', 'example@email.com', 'passw0rd')
     user.who_am_i()
     user.update_task({
         'hours': 1.8
