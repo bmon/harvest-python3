@@ -8,7 +8,7 @@ with codecs_open("README.md", encoding="utf-8") as f:
 
 setup(
     name="harvest-python3",
-    version="0.0.3",
+    version="0.0.4",
     description=u"Python3 wrapper for harvest API",
     long_description=long_description,
     classifiers=[
@@ -22,7 +22,7 @@ setup(
     keywords="harvest api harvestapp",
     author=u"Brendan Roy",
     author_email="br3ndanr@gmail.com",
-    url="https://github.com/laodicean/harvest-python3",
+    url="https://github.com/bmon/harvest-python3",
     license="MIT",
     packages=find_packages(),
     include_package_data=True,
