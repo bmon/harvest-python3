@@ -3,6 +3,7 @@ import requests
 from requests_oauthlib import OAuth2Session
 from urllib.parse import urlparse
 from base64 import b64encode
+from collections import OrderedDict
 
 HARVEST_STATUS_URL = "http://www.harveststatus.com/api/v2/status.json"
 
@@ -343,7 +344,7 @@ class HarvestUser:
             resp = requestor.request(**kwargs)
             if "DELETE" not in method:
                 try:
-                    return resp.json()
+                    return resp.json(object_pairs_hook=OrderedDict)
                 except:
                     return resp
             return resp
